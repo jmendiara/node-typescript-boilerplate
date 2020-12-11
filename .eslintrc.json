@@ -6,7 +6,7 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "tsconfig.json",
+    "project": "tsconfig.tests.json",
     "sourceType": "module"
   },
   "plugins": [
@@ -18,8 +18,10 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
+    "plugin:jest/style",
     "prettier",
     "prettier/@typescript-eslint"
   ],
-  "rules": {}
+  "rules": {},
+  "ignorePatterns": ["dist/", "node_modules/"]
 }

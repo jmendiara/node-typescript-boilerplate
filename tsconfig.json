@@ -1,25 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-    "importHelpers": true,
-    "jsx": "react",
     "alwaysStrict": true,
-    "sourceMap": true,
+    "baseUrl": "src",
+    "declaration": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "lib": ["es2020"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
     "noImplicitReturns": true,
+    "noImplicitThis": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "strictNullChecks": false
+    "outDir": "./dist",
+    "removeComments": true,
+    "rootDir": "./src",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "ES2019",
   },
   "include": [
-    "src/**/*",
-    "__tests__/**/*"
-  ]
+    "src/**/*"
+  ],
+  "exclude": ["node_modules"]
 }
