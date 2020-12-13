@@ -5,12 +5,12 @@
   "author": "Javier Mendiara Cañardo <jmendiara@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node lib/index.js",
     "clean": "rm -fR lib && rm -fR *.tsbuildinfo",
     "prebuild": "npm run clean",
     "build": "tsc -p tsconfig.json",
     "watch": "tsc -w -p tsconfig.json",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint .",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "format": "prettier --write '{src,__tests__}/**/*.{js,ts,md}'",
@@ -22,6 +22,9 @@
     "lib",
     "src"
   ],
+  "bin": {
+    "boilerplate": "./bin/boilerplate"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.19",
     "@types/node": "^14.14.2",
