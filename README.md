@@ -1,7 +1,7 @@
 
 # node-typescript-boilerplate
 
-👩🏻‍💻 Developer Ready: A comprehensive template. Works out of the box for most [Node.js][nodejs] projects.
+👩🏻‍💻 Developer Ready: A comprehensive template. Works out of the box for most nodejs projects.
 
 🏃🏽 Instant Value: All basic tools included and configured:
 
